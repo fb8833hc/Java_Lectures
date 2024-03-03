@@ -1,5 +1,7 @@
 package Week_2;
 
+import java.util.Arrays;
+
 public class ArrayExamples {
     public static void main(String[] args) {
         int[] numbers = new int[5];
@@ -16,5 +18,11 @@ public class ArrayExamples {
 
         int numberOfClasses = classNames.length;
         System.out.println("There are " + numberOfClasses + " classes");
+
+        for (int x = 0; x<classNames.length; x++) {
+            System.out.println("A class name is " + classNames[x]);
+        }
+
+        System.out.println(Arrays.toString((classNames)));
     }
 }
